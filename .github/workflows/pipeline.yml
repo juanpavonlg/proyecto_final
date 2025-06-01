@@ -33,3 +33,10 @@ jobs:
 
       - name: Build APK
         run: flutter build apk --release --build-name=1.0.0 --build-number=1
+      
+      - name: Create a Release APK
+        uses: ncipollo/release-action@v1
+        with:
+          artifacts: "build/app/outputs/flutter-apk/*.apk"
+          token: ${{ secrets.TOKEN }}
+          
