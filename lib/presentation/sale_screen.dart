@@ -22,7 +22,7 @@ class SaleScreen extends ConsumerWidget {
           itemBuilder: (_, index) {
             final sale = sales[index];
             return ListTile(
-              title: Text("${sale.date}"),
+              title: Text(sale.date),
               subtitle: Text(
                 "${sale.bookId} - ${sale.clientId} - ${sale.quantity} unidades",
               ),
