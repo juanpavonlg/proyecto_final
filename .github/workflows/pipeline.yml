@@ -37,6 +37,8 @@ jobs:
       - name: Create a Release APK
         uses: ncipollo/release-action@v1
         with:
+          tag: ${{ github.ref_name }}
+          name: Realease ${{ github.ref_name }}
           artifacts: "build/app/outputs/flutter-apk/*.apk"
           token: ${{ secrets.TOKEN }}
           
