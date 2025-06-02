@@ -1,3 +1,3 @@
 # proyecto_final
 
-A new Flutter project.
+Este es el proyecto final de la materia 'Desarrollo de Aplicaciones Móviles'.
